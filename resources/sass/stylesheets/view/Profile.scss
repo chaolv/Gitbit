@@ -1,0 +1,25 @@
+@import "compass/utilities/";
+
+.profile-panel {
+  .avatar {
+    float: left;
+    border-radius: 32px;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .stats {
+    @include clearfix;
+    .stat {
+      float: left;
+      text-align: center;
+      .stat-count {
+        font-weight: bold;
+        color: #4078c0;
+        display: block;
+      }
+    }
+  }
+}
+
+

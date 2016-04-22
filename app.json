@@ -1,4 +1,20 @@
 {
+    "builds": {
+        "web": {"default": true},
+        "native": {
+            "packager": "cordova",
+            "cordova" : {
+                "config": {
+                    // Uncomment the line below and add the platforms you wish to build for
+                    "platforms": "android",
+                    "id": "com.domain.Gitbit",
+                    "name": "Gitbit"
+                }
+            }
+        }
+    },
+
+                
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */
@@ -74,6 +90,10 @@
         {
             "path": "resources/css/app.css",
             "update": "delta"
+        },
+        {
+            "path": "resources/css/custom.css",
+            "update": "delta"
         }
     ],
 
@@ -105,7 +125,8 @@
     "resources": [
         "resources/images",
         "resources/icons",
-        "resources/startup"
+        "resources/startup",
+        "resources/sass/stylesheets/fonts/pictos"
     ],
 
     /**
@@ -131,5 +152,7 @@
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "63c38355-2127-45f1-8d9c-2dfd242b3a8b"
+    "id": "63c38355-2127-45f1-8d9c-2dfd242b3a8b",
+
+    "overrides": "${app.dir}/overrides"
 }

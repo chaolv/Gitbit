@@ -1,0 +1,9 @@
+.main-menu {
+  .x-toolbar {
+    .x-button {
+      &:last-child {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}

@@ -14,10 +14,23 @@ Ext.application({
     name: 'Gitbit',
 
     requires: [
-        'Ext.MessageBox'
+        //touch
+        'Ext.MessageBox',
+        'Ext.Img',
+        'Ext.Label',
+        //custom
+        'Gitbit.view.menu.List',
+        'Gitbit.view.menu.Profile',
+        'Gitbit.view.menu.Menu',
+        'Gitbit.view.Profile',
+        'Gitbit.view.Main'
     ],
 
     views: [
+
+    ],
+
+    controllers: [
         'Main'
     ],
 
